@@ -1,0 +1,25 @@
+{
+    "name": "antigravity-backend-v2",
+    "version": "2.0.0",
+    "description": "Enhanced AI-powered URL threat detection backend",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js",
+        "test": "node --test"
+    },
+    "dependencies": {
+        "@langchain/community": "^0.3.0",
+        "@langchain/core": "^0.3.0",
+        "@langchain/openai": "^0.3.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.0",
+        "langchain": "^0.3.0",
+        "zod": "^3.23.8"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
