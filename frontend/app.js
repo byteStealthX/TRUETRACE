@@ -1,5 +1,5 @@
 // API Configuration
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? 'http://localhost:3000' : '';
 
 // Theme Management
 const themeToggle = document.getElementById('themeToggle');
@@ -193,3 +193,4 @@ fetch(`${API_BASE_URL}/health`)
         console.error('%c❌ Backend Offline:', 'color: #ef4444; font-weight: bold;', err.message);
         console.log('%cMake sure the backend server is running on', 'color: #f59e0b;', API_BASE_URL);
     });
+
